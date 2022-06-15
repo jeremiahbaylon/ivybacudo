@@ -1,0 +1,541 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nuosu SIL', serif !important;
+}
+
+
+
+.bg-color {
+	/*background-color: #99b9de;*/
+	background-image: url(./images/vase.jpg);
+	background-color: rgba(0,0,0,0.25);
+	background-size: cover;
+	background-repeat: no repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+
+
+
+/*.fade-in-text {
+  font-family: Nuosu SIL;
+  animation: fadeOut 5s;
+  animation: forwards;
+}
+
+@keyframes fadeOut {
+	100% { opacity: 1; }
+  	0% { opacity: 0; }
+
+}*/
+
+.fade-out-text {
+    animation-name:fadeOut;
+    animation-duration:5s;
+    animation-fill-mode: forwards; /* added */
+    /*visibility: hidden;
+    display: none;*/
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 2;
+        margin-left: 0%;
+    }
+
+    to {
+        opacity: 0;
+        /*margin-left: -100%;*/
+        height: 0; /* added */
+    }
+}
+
+.navbar {
+	position: sticky;
+	background-color: none;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+
+}
+
+.nav-name {
+	font-size: 2.1rem;
+}
+
+.nav {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	list-style: none;
+}
+
+.portfolio {
+	margin-right: auto;
+
+}
+
+.intro {
+	font-size: 2rem;
+	padding: 2.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 15rem;
+	
+}
+
+.intro-name {
+	font-size: 4rem;
+	font-weight: bolder;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+	
+	
+}
+
+
+.intro-sub {
+	font-size: 2rem;
+	font-weight: bolder;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	/*margin-left: 1rem;*/
+	
+}
+
+
+.portfolio {
+	padding: 2rem;
+}
+
+.about-me {
+	margin-top: 15rem;
+	font-weight: bolder;
+	font-size: 2rem;
+}
+
+
+.about-me-sub, .quote, .quote-name {
+	font-weight: bolder;
+	font-size: 1.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+.cap-project {
+	font-weight: bold;
+}
+
+/*Small Device*/
+@media (min-width:  320px) {
+	
+}
+
+/*Medium Device*/
+@media (min-width:  768px) {
+	
+}
+
+/*Large Device*/
+@media (min-width:  992px) {
+	
+}
+
+
+.col-1 {
+	width: calc(100% / 12);
+}
+
+.col-2 {
+	width: calc((100% /12) *2);
+}
+
+.col-3 {
+	width: calc((100% /12) *3);
+}
+
+.col-4 {
+	width: calc((100% /12) *4);
+}
+
+.col-5 {
+	width: calc((100% /12) *5);
+}
+
+.col-6 {
+	width: calc((100% /12) *6);
+}
+
+.col-7 {
+	width: calc((100% /12) *7);
+}
+
+.col-8 {
+	width: calc((100% /12) *8);
+}
+
+.col-9 {
+	width: calc((100% /12) *9);
+}
+
+.col-10 {
+	width: calc((100% /12) *10);
+}
+
+.col-11 {
+	width: calc((100% /12) *11);
+}
+
+.col-12 {
+	width: calc((100% /12) *12);
+}
+
+.row {
+	grid-auto-rows: auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.text-justify {
+	justify-content: center;
+}
+
+
+.p-3 {
+	padding: 3rem;
+}
+
+.mt-15 {
+	margin-top: 15rem;
+}
+
+.align-items-center
+{
+	align-items: center;
+}
+
+.mx {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+form {
+    background: rgba(0,0,0,0.6);
+
+    width: 100%;
+    max-width: 600px;
+
+    margin: 32px auto;
+    padding: 32px 64px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+}
+
+form h2 {
+    margin-bottom: 32px;
+
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+input,
+button {
+    
+    appearance: none;
+
+    width: 50%;
+
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 1px solid black;
+
+    background-color: transparent;
+
+    outline: none;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 16px;
+    background-color: black;
+    color: black;
+    cursor: pointer;
+    transition: .4s;
+    border-color: black;
+}
+
+button:hover {
+    background-color: #f6f6f6;
+    transition: .4s;
+}
+
+/*General Sibling Selector*/
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: black;
+    transition: .4s;
+}
+
+label {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/*About me*/
+.about_me{
+  margin-top: 100px;
+}
+
+.about_me{
+  margin-bottom: 30px;
+}
+
+.about_me .portfolio{
+  border-left: 1px solid;
+}
+
+.about_text{
+  padding-left: 5px;
+}
+
+
+.h-100 {
+  	height: 100%;
+  	text-align: center;
+  }
+
+.w-100 {
+  	width: 100%;
+  }
+
+.display-inline {
+  	display: inline;
+  }
+
+.text-center {
+	text-align: center;
+}
+
+.width-15px {
+	width: 15px;
+}
+
+.max-w {
+	max-width: 10em;
+}
+
+
+
+/*Footer*/
+.container {
+  margin: 10px auto;
+  width: 80%;
+}
+
+header h1 {
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion {
+  background: #f3f6f4;
+  width: 100%;
+  min-width: 780px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 120px;
+  font-size: 0;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #f8f7c8;
+  border-right: #333 1px solid;
+  width: 90px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab:hover .social a:before {
+  margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+  margin-left: -5px;
+}
+
+.tab .content {
+  background: #fff;
+  width: 350px;
+  height: 120px;
+  margin-left: 80px;
+  padding: 15px 0 0 0px;
+  position: relative;
+}
+
+.tab .content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  padding-right: 15px;
+}
+
+.social a:after,
+.social a:before {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 80px;
+  padding-left: 15px;
+  display: block;
+  font: normal 30px;
+  color: #fff;
+}
+
+.social a:after {
+  font-size: 48px;
+  padding-left: 10px;
+  padding-top: 70px;
+  margin-left: 85px;
+}
+
+
+.twitter a:before,
+.twitter a:after {
+  content: "\f081";
+}
+.twitter a:after {
+	content: "\f081";
+  background-color: #6dc5dd;
+}
+
+.facebook a:before,
+.facebook a:after {
+  content: "\f230";
+}
+.facebook a:after {
+	content: "\f230";
+  background-color: #3b5998;
+}
+
+.linkedin a:before,
+.linkedin a:after {
+  content: "\f08c";
+}
+.linkedin a:after {
+	content: "\f08c";
+  background-color: #00a9cd;
+}
+
+.instagram a:before,
+.instagram a:after {
+  content: "\f16d";
+}
+.instagram a:after {
+	content: "\f16d";
+  background-color: #f43022;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 70%;
+  }
+
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto;
+  }
+
+  .tab .content {
+    width: 85%;
+  }
+
+  .tab:hover {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  .accordion {
+    width: 100%;
+    min-width: 270px;
+  }
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+/*Footer End*/
+
+#about-me-page {
+	display: flex;
+	justify-content: center;
+}
+.about-me-sub {
+	display: flex;
+	justify-content: center;
+}
